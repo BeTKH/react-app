@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weekly Planner</title>
+	<style>
+		.week-box {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin: 2px;
+			background-color: lightblue;
+			border: 1px solid black;
+			text-align: center;
+			line-height: 10px;
+			font-size: 10px;
+			font-weight: bold;
+			color: black;
+		}
+
+		.container {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+	</style>
+</head>
+<body>
+	<h1>Weekly Planner</h1>
+
+	<div class="container">
+		<div>
+			<!-- Replace the number of weeks in the array with the number you need -->
+			<?php $weeks = array_fill(0, 100, ''); ?>
+			<?php foreach ($weeks as $week): ?>
+				<div class="week-box"></div>
+			<?php endforeach; ?>
+		</div>
+
+		<div>
+			<!-- Replace the number of weeks in the array with the number you need -->
+			<?php $weeks = array_fill(0, 52, ''); ?>
+			<?php foreach ($weeks as $week): ?>
+				<div class="week-box"></div>
+			<?php endforeach; ?>
+		</div>
+
+		<div>
+			<!-- Replace the number of weeks in the array with the number you need -->
+			<?php $weeks = array_fill(0, 52, ''); ?>
+			<?php foreach ($weeks as $week): ?>
+				<div class="week-box"></div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+	
+</body>
+</html>
