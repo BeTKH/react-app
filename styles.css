@@ -1,0 +1,32 @@
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+
+  #titletext{
+    font-weight: 500px;
+    font-style:bold;
+    font-variant-numeric: diagonal-fractions;
+  }
+
+  .username {
+    font-weight: bold;
+  }
+
+  #email {
+
+    font-size: larger;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  p{
+    text-align: justify;
+  }
+
+  body{
+    background-color: rgb(240, 240, 235);
+
+  }
