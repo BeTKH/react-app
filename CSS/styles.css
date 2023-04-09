@@ -30,7 +30,21 @@ img {
     text-align: justify;
   }
 
+  #firstxt{
+    font-size: 140%;
+    font-weight: bold;
+  }
+
+  #aboutme{
+    font-size: 200%;
+    font-weight: bold;
+  }
+
   body{
     background-color: rgb(240, 240, 235);
 
+  }
+
+  a:hover, :focus{
+    color: red;
   }
