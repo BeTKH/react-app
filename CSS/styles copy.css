@@ -1,0 +1,50 @@
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: 10px;
+    border: 105px solid black;
+  }
+
+  #titletext{
+    font-weight: 500px;
+    font-style:bold;
+    font-variant-numeric: diagonal-fractions;
+  }
+
+  .username {
+    font-weight: bold;
+  }
+
+  #email {
+
+    font-size: larger;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  p{
+    text-align: justify;
+  }
+
+
+  #aboutme{
+    font-size: 30%;
+    font-weight: bold;
+    background-color: rgb(39, 110, 196);
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  body{
+    
+    margin: 10px;
+    background-color: rgb(212, 220, 231);
+
+  }
+
+  a:hover, :focus{
+    color: red;
+  }
