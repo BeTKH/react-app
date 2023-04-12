@@ -17,7 +17,6 @@ img {
     text-justify: inter-word;
 
   }
-
   #title{
     font-size: 30px;
     font-weight: bold;
@@ -25,9 +24,10 @@ img {
   }
 
   #text-box{
-    width: 350px;
+    width: 500px;
     height: 800px;
-    border: 5px solid black;
+    border: 5px solid rgb(1, 88, 139);
+    padding: 35px;
     background-color: azure;
   }
 
