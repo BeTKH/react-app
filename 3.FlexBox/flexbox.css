@@ -1,0 +1,16 @@
+.container{
+    border: 3px solid grey;
+    display: flex;
+    flex-direction: row; /*controls direction of flex*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(14, 165, 182);
+    margin: 1rem;
+    border-radius: 50%;
+}

@@ -1,10 +1,13 @@
 
 div#image{
   width: auto;
-  border: 5px solid rebeccapurple;
+  /*border: 5px solid rebeccapurple;*/
+  display: flex;
+  margin: 0px;
+
 }
 
-div#aboutme{
+#aboutme{
 
   width: auto;
   border: 5px solid rgb(101, 114, 101);
@@ -19,6 +22,7 @@ img{
     border-radius: 110px;
     margin: 0px;
     border: 5px solid rgb(1, 88, 139);
+
   }
 
   p{
@@ -37,6 +41,10 @@ img{
     border: 5px solid rgb(1, 88, 139);
     padding: 10px;
     background-color: azure;
+  }
+
+  clear{
+    clear: both;
   }
 
 
