@@ -7,17 +7,17 @@ div#image{
 div#aboutme{
 
   width: auto;
-  border: 5px solid green;
-  background-color: aqua;
+  border: 5px solid rgb(101, 114, 101);
+  background-color: rgb(103, 161, 161);
 
 }
 
 
-img {
-    width: auto;
+img{
+    width: 200px;
     height: 200px;
     border-radius: 110px;
-    margin-right: 10px;
+    margin: 0px;
     border: 5px solid rgb(1, 88, 139);
   }
 
@@ -25,21 +25,15 @@ img {
     text-align: justify;
   }
 
-  #normal-body-text{
-    font-size: 14px;
-    text-align: justify;
-    text-justify: inter-word;
-
-  }
   #title{
     font-size: 30px;
     font-weight: bold;
-    font-style: normal;
+   
   }
 
   #text-box{
-    width:autopx;
-    height: 800px;
+    width:auto;
+    height: auto;
     border: 5px solid rgb(1, 88, 139);
     padding: 10px;
     background-color: azure;
