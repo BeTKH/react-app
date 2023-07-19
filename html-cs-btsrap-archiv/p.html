@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+
+
+    <script>
+        function processForm() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          google.script.run.processForm({name: name, email: email, message: message});
+          alert("Your message has been sent!");
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+        }
+      </script>
+
+    <style>
+      /* Add responsive styles here */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Heebo', Arial, sans-serif;
+        font-size: 22px;
+      }
+      
+      .header {
+        text-align: center;
+        background-color: #0B5394;
+        color: #fff;
+        padding: 20px;
+      }
+      
+      .avatar {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin-top: 30px;
+        border: 5px solid rgb(1, 88, 139);
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .social-icons a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        background-color: #0B5394;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .about {
+        max-width: 888px;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 20px;
+      }
+      
+      @media (max-width: 600px) {
+        .about {
+          padding: 10px;
+        }
+      }
+
+      h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+      }
+      input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 14px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+      textarea {
+        height: 150px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .about{
+
+        border: 2px solid rgb(1, 88, 139);
+        padding: 10px;
+        background-color: azure;
+        border-radius: 20px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    
+      
+    
+    <img src="beck.jpeg" alt="Avatar" class="avatar">
+    
+    <div class="social-icons">
+       
+      
+      
+      <a href="https://www.linkedin.com/in/bekalu-tadesse-1902b3122/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/BeTKH"><i class="fa fa-github"></i></a>
+      <a href="https://twitter.com/beck_tkh"><i class="fa fa-twitter"></i></a>
+    </div>
+
+    <div class="about">
+      <h3>About Me</h3>
+      <p>I consider myself to be a professional that is well-organized, disciplined, and committed to life-long learning.</p>
+
+      <p>As a Software engineering professional, I am dedicated to learning technologies and good practices to develop software 
+        applications that automate tasks, extract insights or recognize patterns from data. I am dedicated to writing clean 
+        code that is easy to maintain and test. I prefer to program in Python programming language but also can work with Java or C#. </p>
+
+        <p>I am experienced with analyzing semi-structured data, such as XML, to extract insights from bulk data 
+            (millions of files). I  also have practical experience using machine learning & deep learning classifier models (in Python) 
+            for natural language processing (NLP) - automatic text classification.</p>
+
+        <p>I enjoy working with various database management systems (DBMS) like MySQL, MongoDB, and Neo4j. Currently 
+            I am working on my PhD, Computer Science at North Dakota State University (NDSU) and working on software testing projects & 
+            learning cloud technologies (AWS & Google). Visit my projects <a href="https://sites.google.com/view/bekaluetadesse/projects">here</a>.</p>
+    
+    <h3>Contact Me</h3>
+    <form method="POST" action="#">
+        
+        <input type="text" id="name" name="name" required placeholder="your name">
+        
+        <input type="email" id="email" name="email" required placeholder="email">
+
+        <textarea id="message" name="message" required placeholder="Leave your message here!"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+
+    
+    
+  </body>
+</html>

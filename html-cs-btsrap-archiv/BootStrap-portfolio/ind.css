@@ -1,0 +1,8 @@
+#profile {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Let the height adjust proportionally */
+  }
+
+  .col-lg-6{
+   text-align: justify;
+  }
