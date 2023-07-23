@@ -10,11 +10,13 @@ USER app
 #set the working diretory
 WORKDIR /app
 
-# copy all files to current dir
-COPY . .
+# copy all files to current dir [source_dir] -> [target_dir]
+COPY package*.json ./
 
 # install dependencies
 RUN npm install
+
+COPY . . 
 
 # set env vraibale 
 ENV API_URL=http://api.myapp.com/
@@ -24,6 +26,12 @@ ENV API_URL=http://api.myapp.com/
 EXPOSE 3000
 
 
-#default command 
-CMD npm start
+#default command (shell form)
+#CMD npm start
+
+#default command (exec form)
+CMD ["npm", "start"]
+
+
+# soMe text2 
 
