@@ -1,34 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Remove 'Switch'
+import { Switch } from 'react-router'; // Add this line
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import WorkExperience from './components/WorkExp';
+import Education from './components/Education';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <div className="App">
+    <Router>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">About Me</Link>
+            </li>
+            <li>
+              <Link to="/projects">My Projects</Link>
+            </li>
+            <li>
+              <Link to="/work-experience">Work Experience</Link>
+            </li>
+            <li>
+              <Link to="/education">Education</Link>
+            </li>
+          </ul>
+        </nav>
 
-export default App
+        <Switch>
+          <Route  path="/about-me">
+            <AboutMe />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/work-experience">
+            <WorkExperience />
+          </Route>
+          <Route path="/education">
+            <Education />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
