@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          My Cool Website
+          Portfolio
         </a>
         <button
           className="navbar-toggler"
