@@ -6,11 +6,11 @@ function ListGroup() {
       <h1>Lists</h1>
       {items.length === 0 && <p>No Item found</p>}
       <ul className="list-group">
-        {items.map((item) => (
+        {items.map((item, indx) => (
           <li
             className="list-group-item"
             key={item}
-            onClick={() => console.log("clicked")}
+            onClick={() => console.log(item, indx)}
           >
             {item}
           </li>
