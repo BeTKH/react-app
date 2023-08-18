@@ -3,9 +3,17 @@ import ListGroup from "./components/ListGroup";
 function App() {
   let items = ["NY", "Berlin", "London", "Chicago", "Fargo", "Tokyo"];
 
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
+
   return (
     <div>
-      <ListGroup items={items} heading="Cool Cities" />
+      <ListGroup
+        items={items}
+        heading="Cool Cities"
+        onSelect={handleSelectItem}
+      />
     </div>
   );
 }
