@@ -1,16 +1,18 @@
 import { useState } from "react";
 
-function ListGroup() {
-  let items = ["New York", "Berlin", "London", "Chicago", "Fargo", "Tokyo"];
+interface ListGroupProps {
+  items: string[];
+  heading: string;
+}
 
-  // State Hook destructure [index, func]
+function ListGroup({ items, heading }: ListGroupProps) {
+  // Component State Hook destructure [index, func]
   const [selectedIndex, setSelectedIndex] = useState(-1);
-
-  const add = (a: number, b: number) => a + b;
 
   return (
     <>
-      <h1>Lists</h1>
+      <h1>{heading}</h1>
+
       {items.length === 0 && <p>No Item found</p>}
       <ul className="list-group">
         {/* render list dynamically - map over the list of items and 
