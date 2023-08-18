@@ -1,5 +1,10 @@
+import { useState } from "react";
+
 function ListGroup() {
   let items = ["New York", "Berlin", "London", "Chicago", "Fargo", "Tokyo"];
+
+  // State Hook destructure [index, func]
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const add = (a: number, b: number) => a + b;
 
@@ -12,9 +17,15 @@ function ListGroup() {
         create a new li element for each item */}
         {items.map((item, index) => (
           <li
-            className="list-group-item"
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
             key={item}
-            onClick={() => console.log(item, index)}
+            onClick={() => {
+              setSelectedIndex(index);
+            }}
           >
             {item}
           </li>
